@@ -84,7 +84,7 @@ class CarInterface(CarInterfaceBase):
     ret.lateralTuning.pid.kf = 0.00006  # conservative feed-forward
 
     if candidate in HONDA_BOSCH:
-      ret.longitudinalTuning.kpV = [0.05]
+      ret.longitudinalTuning.kpV = [0.025]
       ret.longitudinalTuning.kiBP = [0., 5., 35.]
       ret.longitudinalTuning.kiV = [0.4, 0.4, 0.2]
       ret.stoppingDecelRate = 0.1
